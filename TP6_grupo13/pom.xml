@@ -5,4 +5,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Maven</name>
   <description>ResolucionTP6</description>
+  
+  <properties>
+ <maven.compiler.target>11</maven.compiler.target>
+ <maven.compiler.source>11</maven.compiler.source>
+ <encoding>UTF-8</encoding>
+</properties>
+
 </project>
