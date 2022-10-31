@@ -1,4 +1,4 @@
-package ar.edu.unju.escmi.poo;
+package ar.edu.unju.escmi.poo.Elements;
 
 public class Rol {
 	private String descripcion;

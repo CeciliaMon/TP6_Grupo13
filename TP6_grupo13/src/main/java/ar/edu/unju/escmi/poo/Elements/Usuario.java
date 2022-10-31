@@ -1,6 +1,8 @@
-package ar.edu.unju.escmi.poo;
+package ar.edu.unju.escmi.poo.Elements;
 
 import java.time.LocalDate;
+
+import ar.edu.unju.escmi.poo.Collection.CollectionPersona;
 
 public class Usuario {
 	private String email;
@@ -49,7 +51,7 @@ public class Usuario {
 	public Usuario() {
 		super();
 	}
-	
+	//dATEtIMApARSEeXCEPTION   B
 	public boolean verificarCredenciales() {
 		if (CollectionPersona.buscarPersona(email, password).equals(email, password)) {
 			estado = true;
@@ -63,13 +65,30 @@ public class Usuario {
 	}
 	
 	public boolean verificarDuracionRoL() {
-		if (Rol.getDuracionRol() > Rol.getDuracionRol()) {
+		if (getRol().getDuracionRol() > Rol.getDuracionRol()) {
 			estado = false;
 		}
 		else {
 			estado = true;
 		}
 		return estado;
+		
+	}
+	public boolean accesoPersona() {
+		boolean band;
+		if ((verificarCredenciales() == true) && (verificarDuracionRoL() == true)) {
+			CollectionPersona.getPersonas();
+			band = true;
+		}
+		else {
+			System.out.println("El usuario no tiene permitido el acceso");
+			band = false;
+		}
+		return band;
+	}
+	public Persona equals(String email2, String password2) {
+		return null;
+		// TODO Auto-generated method stub
 		
 	}
 	

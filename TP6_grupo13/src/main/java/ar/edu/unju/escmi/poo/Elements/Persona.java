@@ -1,4 +1,4 @@
-package ar.edu.unju.escmi.poo;
+package ar.edu.unju.escmi.poo.Elements;
 
 public class Persona {
 	private String nombre;
